@@ -1,0 +1,50 @@
+extends layout
+
+block content
+      #box
+      #box-right
+        h4 Thể loại
+        br
+        a(href='#') action
+        a(href='#') comedy
+        a(href='#') drama
+        a(href='#') comic
+        a(href='#') horror
+        a(href='#') fantasy
+        a(href='#') music
+        a(href='#') psychological
+        a(href='#') school life
+        a(href='#') seinen
+        a(href='#') manga
+        a(href='#') tiểu thuyết
+        a(href='#') manga
+        a(href='#') manga
+        a(href='#') sprotsssssssssssssssssssssssssssssssssss
+      #book-box
+      - var x = books[0]
+        #book-box1
+          img(src=x.img)
+          #book-box1-2
+            h1
+              | Tên:
+              span=x.name
+            h1
+              | Tác giả:
+              span
+              a(href='/author/#{x.author_id}')=x.author
+            h1
+              | Thể loại:
+              span
+                a(href='#')=x.type
+            h1
+              | Trạng thái:
+              span Còn tiếp
+        h1 Giới thiệu
+        hr
+        #book-box2
+          p=x.introduce            
+        h1 Danh sách chương
+        hr
+      
+      #footer
+        | © SiteName | Design by Ngo Doan Luong

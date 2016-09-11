@@ -1,0 +1,53 @@
+#author {
+    width:78%;
+    height:1100px;
+}
+#author h2{
+    margin-bottom: 5px;
+    margin-top:10px;
+    font-size:20px;
+    color:aquamarine;
+    font-weight: bold;
+    text-align: left;
+}
+#author hr{
+    width:100%;
+    height:2.5px;
+    background-color:aquamarine;
+}
+#author-box1 {
+    width:100%;
+    height:260px;
+}
+#author-box1 img{
+    width:22%;
+    height:100%;
+}
+#author-box1-2 {
+    float:right;
+    width:76%;
+    height: 100%;
+    margin-left:3px;
+}
+#author-box1-2 h1{
+    text-align: left;
+    font-size:20px;
+    font-weight: bold;
+    color:dodgerblue;
+}
+#author-box2 {
+    width:100%;
+    height:280px;
+}
+#author-box2 p{
+    margin:5px 5px 5px 5px;
+    font-size: 13px;
+    font-style:normal;
+    color:whitesmoke;
+    overflow-y:scroll;
+}
+#author-box3 {
+    width:100%;
+    height:440px;
+    overflow-y:scroll;
+}

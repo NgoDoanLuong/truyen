@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/book.css')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/author.css')
+    meta(charset='utf-8')
+  body
+    #wrapper
+      #header
+        #logo
+          h1
+            a(href='#') truyenhay.com
+        #search
+          form(action='', method='post')
+            div
+              input.text(name='search', size='32', maxlength='64')
+        ul#menu
+          li
+            a(href='index.html') Trang chủ
+          li
+            a(href='allbook.html') Danh sách
+            ul
+              li
+                a(href='allbook.html') Tất cả
+              li
+                a(href='allbook.html') Truyện mới cập nhật
+              li
+                a(href='allbook.html') Truyện xem nhiều nhất
+          li
+            a(href='#') Thể loại
+            ul
+              li
+                a(href='allbook.html') Kiếm Hiệp
+              li
+                a(href='allbook.html') Ngôn Tình
+              li
+                a(href='allbook.html') Trinh Thám
+              li
+                a(href='allbook.html') Hành Động
+          li
+            a(href='#') Thông tin
+          li
+            a(href='#') Liên hệ
+          li
+            a(href='signup.html') Đăng kí/Đăng nhập
+    block content

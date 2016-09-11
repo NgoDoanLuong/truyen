@@ -1,0 +1,37 @@
+extends layout
+
+block content
+     #box
+      #box-right
+        h4 Thể loại
+        br
+        a(href='#') action
+        a(href='#') comedy
+        a(href='#') drama
+        a(href='#') comic
+        a(href='#') horror
+        a(href='#') fantasy
+        a(href='#') music
+        a(href='#') psychological
+        a(href='#') school life
+        a(href='#') seinen
+        a(href='#') manga
+        a(href='#') tiểu thuyết
+        a(href='#') manga
+        a(href='#') manga
+        a(href='#') sprotsssssssssssssssssssssssssssssssssss
+      #box-left
+        h1 Truyện mới cập nhật
+            section
+            - each book in list_book
+              #book
+                a(href='/book/#{book.book_id}')
+                  img(src=book.img)
+                #book-list
+                  h3=book.name
+                  a(href=book.info)=book.chap
+        h2
+          a(href='#') Xem tất cả
+        h1 Truyện được xem nhiều nhất
+      #footer
+        | © SiteName | Design by Ngo Doan Luong
